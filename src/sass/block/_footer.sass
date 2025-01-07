@@ -1,0 +1,58 @@
+.footer
+    display: flex
+    justify-content: space-around
+    background-color: #2d2d2f
+    height: 430px
+     
+    &_nav
+        display: flex
+        flex-direction: column
+        p
+            text-decoration: none
+            font-family: OpenSans
+            font-size: 20px
+            font-weight: bold
+            text-align: left
+            color: #d6d0d0 
+            padding: 36px 0 10px 0 
+        &-link
+            text-decoration: none
+            font-family: OpenSans
+            font-size: 20px
+            font-weight: bold
+            text-align: left
+            color: #d6d0d0
+            padding-top: 10px
+
+            
+    &_logo
+        &-text
+            font-family: OpenSans
+            font-size: 20px
+            font-weight: bold
+            text-align: left
+            color: #d6d0d0
+            padding: 36px 11px 11px 0
+        &-img
+            padding-top: 20px
+    &_adress
+        font-family: OpenSans
+        font-size: 20px
+        font-weight: bold
+        text-align: left
+        color: #d6d0d0
+        margin-top: 36px
+        &-text
+            padding-bottom: 10px
+@media ( max-width: 1024px)
+    .footer     
+        &_nav
+            p
+                font-size: 16px
+            &-link
+                font-size: 16px
+        &_logo
+            &-text
+                font-size: 16px
+        &_adress
+            font-size: 16px

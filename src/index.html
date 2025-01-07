@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/style.min.css">
+    <title>Stalker</title>
+</head>
+<body>
+   <nav class="nav">
+    <div class="nav_tel">
+        +375(29)555-55-55
+    </div>
+    <img class="nav_logo" src="./icon/logo.png" alt="logo">
+    <div class="nav_menu">
+        <a href="#"><img src="./icon/Default.png" alt="search"></a>
+        <a href="#"><img src="./icon/Component 23.png" alt="account"></a>
+        <a href="#"><img src="./icon/Component 24.png" alt="catalog"></a>
+        <a href="#"><img src="./icon/Component 25.png" alt="basket"></a>
+    </div>
+    <div class="nav_gamb">
+        <span class="nav_gamb-1">_____</span>
+        <span class="nav_gamb-1">_____</span>
+        <span class="nav_gamb-1">_____</span>
+    </div>
+   </nav>
+   <div class="gamb">
+    <div class="close">
+        &times;
+    </div>
+    <div class="gamb-menu">
+        <a href="#"><img src="./icon/Default.png" alt="search"></a>
+        <a href="#"><img src="./icon/Component 23.png" alt="account"></a>
+        <a href="#"><img src="./icon/Component 24.png" alt="catalog"></a>
+        <a href="#"><img src="./icon/Component 25.png" alt="basket"></a>
+    </div>
+    
+</div>
+   <main>
+        <section>
+            <h1 class="title">КАТЕГОРИИ</h1>
+            <div class="kategoriy">
+                <div class="kategoriy_item1">
+                   <div>
+                    <p class="kategoriy_item1-desc">ОБУВЬ</p>
+                   </div>
+                    <a class="item-btn catalog-item_prod" data-category = "3" href="#">
+                        <button class="kategoriy_item1-btn">В КАТАЛОГ</button>
+                    </a>
+                </div>
+                <div class="kategoriy_item2">
+                    <div>
+                        <p class="kategoriy_item2-desc">РЮКЗАКИ И СУМКИ</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "4" href="#">
+                        <button class="kategoriy_item2-btn">В КАТАЛОГ</button>
+                    </a>    
+                </div>
+                <div class="kategoriy_item3">
+                    <div>
+                        <p class="kategoriy_item3-desc">ВОЕННАЯ ОДЕЖДА</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "1" href="#">
+                        <button class="kategoriy_item3-btn">В КАТАЛОГ</button>
+                    </a>   
+                </div>
+                <div class="kategoriy_item4">
+                    <div>
+                        <p class="kategoriy_item4-desc">СНАРЯЖЕНИЕ</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "2" href="#">
+                        <button class="kategoriy_item4-btn">В КАТАЛОГ</button>
+                    </a>  
+                </div>
+                <div class="kategoriy_item5">
+                    <div>
+                        <p class="kategoriy_item5-desc">СИМВОЛИКА</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "3" href="#">
+                        <button class="kategoriy_item5-btn">В КАТАЛОГ</button>
+                    </a>   
+                </div>
+                <div class="kategoriy_item6">
+                    <div>
+                        <p class="kategoriy_item6-desc">КУРТКИ И ПАРКИ</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "2" href="#">
+                        <button class="kategoriy_item6-btn">В КАТАЛОГ</button>
+                    </a>    
+                </div>
+                <div class="kategoriy_item7">
+                    <div>
+                        <p class="kategoriy_item7-desc">АКСЕССУАРЫ</p>
+                    </div>
+                    <a class="item-btn catalog-item_prod" data-category = "1" href="#">
+                        <button class="kategoriy_item7-btn">В КАТАЛОГ</button>
+                    </a>   
+                </div>
+            </div>
+        </section>        
+   </main>
+   <section class="product active">
+    <div class="catalog-header">
+        <div class="catalog">
+            <img class="catalog_fon" src="./images/Property1=slayder3.png" alt="fon">
+            <h1 class="catalog_title1">КАТАЛОГ</h1>
+            <div class="catalog_tovara">
+                <div class="catalog_tovara"></div>
+                <button class="catalog_tovara-btn" id="addBtn">ДОБАВИТЬ ТОВАР</button>
+            </div>
+        </div>
+        <div class="okno">
+            <div class="modal" id="modal">
+                <div class="active_close close">&times;</div>
+                <div class="active_item">
+                    <span class="text">Введите название товара</span><br><input class="add_title" type="text" placeholder="Название товара"> <br>
+                    <span class="text">Загрузите фото товара</span><br><input class="add_img" type="file" placeholder="ссылка на фото товара"><br>
+                    <span class="text">Укажите категорию</span><br><input class="add_category" type="text" placeholder="категория товара"><br>
+                    <span class="text">Введите Описание товара</span><br><textarea class="add_descr" id="add_descr" name="content" cols="40" rows="3" placeholder="Описание товара 100 символов"></textarea> <br>
+                    <span class="text">Введите стоимость товара</span><br><input class="add_price" type="text" placeholder="Стоимость товара в $"><br>
+                    <button class="addBtn" id="addBtn1" >ДОБАВИТЬ ТОВАР</button>
+                </div>
+            </div>
+            <div class="addModal" id="addModal">
+                <div class="active_close close" id="close">&times;</div>
+                <h1 class="active_title">ТОВАР ДОБАВЛЕН</h1>
+            </div>
+            <div class="modal2" id="modal2">
+                <div class="active_close close" id="close">&times;</div>
+                <h1 class="active_title">ТОВАР УДАЛЕН</h1>
+            </div>
+        </div>
+        <div class="baza">
+            <div class="catalog_list"></div> 
+        </div>
+        <div class="baza_add">
+            <button class="baza_add-btn">Загрузить еще</button>
+        </div>   
+    </div>
+   </section>
+   <footer>
+    <div class="footer">
+        <div class="footer_logo">
+            <p class="footer_logo-text">STALKER-SHOP.BY - Милитари магазин</p>
+            <hr>
+            <img class="footer_logo-img" src="./icon/logo.png" alt="logo">
+        </div>
+        <div class="footer_nav">
+            <p>Категории товаров</p>
+            <hr>
+            <a class="footer_nav-link glav"  href="#">Главная</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "0" href="#">Каталог</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "1" href="#">Военная одежда</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "2" href="#">Куртки и парки</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "3" href="#">Обувь</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "4" href="#">Рюкзаки и сумки</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "1" href="#">Аксессуары</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "2" href="#">Снаряжение</a>
+            <a class="footer_nav-link catalog-item_prod" data-category = "3" href="#">Символика</a>
+        </div>
+        <div class="footer_adress">
+            <div class="footer_adress-text">Наши контакты</div>
+            <hr>
+            <div class="footer_adress-text">Адрес: г. Минск, ул. Красная 14</div>
+            <div class="footer_adress-text">+37529-145-84-48</div>
+            <div class="footer_adress-text">+37529-662-83-66</div>
+            <div class="footer_adress-text">Email: info@stalker-shop.by</div>
+            <div class="footer_adress-text">Время работы:</div>
+            <div class="footer_adress-text">ПН-ПТ с 10-00 до 19-00</div>
+            <div class="footer_adress-text">СБ-ВС с 11-00 до 16-00</div>
+            <div class="footer_adress-text">GPS 53°54′49″N, 27°34′36″E</div>
+        </div>
+    </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/main.js"></script> -->
+</body>
+</html>

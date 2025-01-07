@@ -1,0 +1,52 @@
+.product
+    .modal,.addModal, .modal2
+        display: none
+    .okno
+        display: flex
+        justify-content: center
+        .active
+            top: 600px
+            position: absolute
+            width: 350px
+            height: 600px
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            border: 2px solid red
+            background-color: #F0F8FF
+            border-radius: 10px
+            margin-top: 200px
+            text-align: center
+            &_item
+                display: flex
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                .text
+                    font-size: 20px
+                .addBtn
+                    width: 250px
+                    height: 50px
+                    margin-left: 10px
+                    background-color: #ff5656
+                    border: 2px solid #1eacc7
+                    border-radius: 10px
+                    color: #FFF
+            &_close
+                position: absolute
+                top: 10px
+                left: 360px
+                right: 750px
+                font-size: 15px
+                color: #1eacc7
+                cursor: pointer
+            .close
+                font-size: 40px 
+                margin-top: -20px
+                color: #ff5656
+            &_title
+                font-size: 40px
+                font-weight: bold
+                text-align: center
+                color: #242324
