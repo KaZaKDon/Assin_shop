@@ -1,0 +1,26 @@
+{
+  "name": "assin_shop",
+  "version": "1.0.0",
+  "description": "Верстка магазина  по макету. Обучение fetch API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaZaKDon/Assin_shop.git"
+  },
+  "keywords": [],
+  "author": "Vnukov",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KaZaKDon/Assin_shop/issues"
+  },
+  "homepage": "https://github.com/KaZaKDon/Assin_shop#readme",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.0",
+    "sass": "^1.83.0"
+  }
+}
