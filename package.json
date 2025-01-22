@@ -4,7 +4,8 @@
   "description": "Верстка магазина  по макету. Обучение fetch API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp buildStyles",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
